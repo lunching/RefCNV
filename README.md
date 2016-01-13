@@ -15,3 +15,4 @@ Before running our CNV algorithm, all users have to run "bedtools" (http://bedto
 
 bedtools coverage -abam file_name.bam -b file_name.bed > file_name.all.coverage
 
+puts "This is blue".colorize(:blue)
