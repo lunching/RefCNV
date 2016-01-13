@@ -33,3 +33,5 @@ bedtools coverage -abam file_name.bam -b file_name.bed > file_name.all.coverage
   * numeric vector of total number of mapped read for each reference (the length of the vector need to match the number of references). 
 * TMR_new
   * numeric vector of total number of mapped read for each case (the length of the vector need to match the number of cases). 
+
+<b>Output</b>
