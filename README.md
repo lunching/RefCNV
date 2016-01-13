@@ -9,3 +9,5 @@
 <b>Description</b> <b>RefCNV</b> is a R toolkit for copy number variants using whole exome sequencing data. Current pipeline includes two major compartments: (1) run regression model for all provided replicated references and perform LOOCV (leave-one-out cross validation) for CNV threshold; (2) summarize exom-based results into gene-based and predict CNVs (A: amplification, N: normal and D: deletion).
 
 <b>Depends</b> R (>=3.2.2)
+
+# Main function of RefCNV
