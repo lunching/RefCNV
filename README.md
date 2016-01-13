@@ -11,3 +11,7 @@
 <b>Depends</b> R (>=3.2.2)
 
 # Main function of RefCNV
+Before running our CNV algorithm, all users have to run "bedtools" (http://bedtools.readthedocs.org/en/latest/) to generate the coverage data. Sample code for running coverage based on the capture regions in ".bed" file. (please set the output file name end with ".all.coverage")
+
+bedtools coverage -abam file_name.bam -b file_name.bed > file_name.all.coverage
+
