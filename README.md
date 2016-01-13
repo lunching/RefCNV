@@ -30,6 +30,6 @@ bedtools coverage -abam file_name.bam -b file_name.bed > file_name.all.coverage
 * avg_cov_rm
   * the minimum coverage (default = 30) that the capture region will retain for futher analysis.
 * TMR
-  * numeric vector of total number of mapped read from references (the length of the vector need to match the number of references). 
+  * numeric vector of total number of mapped read for each reference (the length of the vector need to match the number of references). 
 * TMR_new
-  * numeric vector of total number of mapped read from cases (the length of the vector need to match the number of cases). 
+  * numeric vector of total number of mapped read for each case (the length of the vector need to match the number of cases). 
