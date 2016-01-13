@@ -19,3 +19,5 @@ bedtools coverage -abam file_name.bam -b file_name.bed > file_name.all.coverage
 
 <b>Usage</b>
 * GB_CNVs_EL(case, ref, CNV_q = .05, avg_cov_rm = 30, TMR, TMR_new)
+
+** Arguments **
