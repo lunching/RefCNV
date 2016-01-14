@@ -13,8 +13,6 @@ for(i in 1: length(filenames))
  coverage_all[[i]]<- tmp_data2
 }
 
-#save(coverage_all, file="coverage_all_ref.rdata")
-
 filenames_cases<- dir("Cases")[grep("all.coverage", dir("Cases"))]
 coverage_all_cases<- list()
 for(i in 1: length(filenames_cases))
@@ -23,3 +21,4 @@ for(i in 1: length(filenames_cases))
  coverage_all_cases[[i]]<- tmp_data2
 }
 
+## "coverage_all_cases" and "coverage_all" can be used as inputs for "case" and "ref" in function [GB_CNVs_EL](https://github.com/lunching/RefCNV.git)  
