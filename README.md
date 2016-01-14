@@ -20,7 +20,7 @@ Before running our CNV algorithm, all users have to run "bedtools" (http://bedto
 
 bedtools coverage -abam file_name.bam -b file_name.bed > file_name.all.coverage
 
-## GB_CNVs_EL 
+## [GB_CNVs_EL](https://github.com/lunching/RefCNV.git) 
 
 <b>Usage</b>
 * GB_CNVs_EL(case, ref, CNV_q = .05, avg_cov_rm = 30, TMR, TMR_new, gene_map)
