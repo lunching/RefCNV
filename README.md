@@ -42,4 +42,5 @@ bedtools coverage -abam file_name.bam -b file_name.bed > file_name.all.coverage
   * a matrix of gene map file need to provided by user which includes gene symbol, gene ID, chromosome, start position and end position (see sample map file [Sample_gene.map](https://github.com/lunching/RefCNV.git)).
 
 <b>Output</b>
-Outputs will be summarized into excel file with name "CNVs_summary.xls" which contains gene symbol, median of standardized residuals of all cases followed by colnames sMSR_S with constitutive numbers and CNV prediction of all cases followed by colnames CNV_S with constitutive numbers. 
+
+Outputs will be summarized into excel file with name "CNVs_summary.xls" which contains gene symbol, median of standardized residuals of all cases followed by colnames sMSR_S with constitutive numbers and CNV prediction (D: deletion, N: normal, and A: amplification) of all cases followed by colnames CNV_S with constitutive numbers (see sample output [CNVs_summary.xls](https://github.com/lunching/RefCNV.git)). 
