@@ -1,0 +1,25 @@
+##	Set directory of all the coverage files	##
+
+setwd("C:\\NCI\\Projects\\WES\\Manuscript\\R_scripts")
+load("Find_Genes_Build_37.RData")
+
+
+##	Prepare case and reference list	##
+filenames<- dir("refs")[grep(".all.coverage", dir("refs"))]
+coverage_all<- list()
+for(i in 1: length(filenames))
+{
+ tmp_data2<- read.delim(paste("refs\\", filenames[i], sep=""), colClasses = c("character", "numeric", "numeric", "NULL", "numeric", "numeric", "numeric", "numeric"), header=F, sep="\t")
+ coverage_all[[i]]<- tmp_data2
+}
+
+#save(coverage_all, file="coverage_all_ref.rdata")
+
+filenames_cases<- dir("Cases")[grep("all.coverage", dir("Cases"))]
+coverage_all_cases<- list()
+for(i in 1: length(filenames_cases))
+{
+ tmp_data2<- read.delim(paste("Cases\\", filenames_cases[i], sep=""), colClasses = c("character", "numeric", "numeric", "NULL", "numeric", "numeric", "numeric", "numeric"), header=F, sep="\t")
+ coverage_all_cases[[i]]<- tmp_data2
+}
+
