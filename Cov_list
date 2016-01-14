@@ -21,4 +21,4 @@ for(i in 1: length(filenames_cases))
  coverage_all_cases[[i]]<- tmp_data2
 }
 
-## "coverage_all_cases" and "coverage_all" can be used as inputs for "case" and "ref" in function [GB_CNVs_EL](https://github.com/lunching/RefCNV.git)  
+## "coverage_all_cases" and "coverage_all" can be used as inputs for "case" and "ref" in function "GB_CNVs_EL"
