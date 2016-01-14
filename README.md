@@ -39,6 +39,6 @@ bedtools coverage -abam file_name.bam -b file_name.bed > file_name.all.coverage
 * TMR_new
   * numeric vector of total number of mapped read for each case (the length of the vector need to match the number of cases). 
 * gene_map
-  * a matrix of gene map file need to provided by user which includes gene symbol, gene ID, chromosome, start position and end position (see sample map file []()).
+  * a matrix of gene map file need to provided by user which includes gene symbol, gene ID, chromosome, start position and end position (see sample map file [Sample_gene.map]()).
 
 <b>Output</b>
