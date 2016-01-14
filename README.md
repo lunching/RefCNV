@@ -23,7 +23,7 @@ bedtools coverage -abam file_name.bam -b file_name.bed > file_name.all.coverage
 ## GB_CNVs_EL 
 
 <b>Usage</b>
-* GB_CNVs_EL(case, ref, CNV_q = .05, avg_cov_rm = 30, TMR, TMR_new)
+* GB_CNVs_EL(case, ref, CNV_q = .05, avg_cov_rm = 30, TMR, TMR_new, gene_map)
 
 <b>Arguments</b>
 * case 
@@ -38,5 +38,7 @@ bedtools coverage -abam file_name.bam -b file_name.bed > file_name.all.coverage
   * numeric vector of total number of mapped read for each reference (the length of the vector need to match the number of references). 
 * TMR_new
   * numeric vector of total number of mapped read for each case (the length of the vector need to match the number of cases). 
+* gene_map
+  * a matrix of gene map file need to provided by user which includes gene symbol, gene ID, chromosome, start position and end position (see sample map file []()).
 
 <b>Output</b>
