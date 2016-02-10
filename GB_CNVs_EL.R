@@ -19,7 +19,7 @@ GB_CNVs_EL<- function(case = coverage_all_cases, ref = coverage_all, CNV_q = .05
 	 			 y_tmp_tmp<- y_tmp[-j]
 				 fit_tmp<- lm(y_tmp_tmp ~ TMR_tmp)
 				 TMR_testing_tmp<- data.frame(TMR_tmp = TMR[j])
-				 PC_95CI_PDX_tmp<- predict(fit_tmp, TMR_testing_tmp, interval = "prediction",level = .99, se.fit=T)
+				 PC_95CI_PDX_tmp<- predict(fit_tmp, TMR_testing_tmp, interval = "prediction",level = 1 - CNV_q, se.fit=T)
 				 coverage_tmp<- y_tmp[j]
 				 std_residuals_new_tmp<- (coverage_tmp - PC_95CI_PDX_tmp$fit[,1])/(PC_95CI_PDX_tmp$residual.scale*sqrt(1 + (PC_95CI_PDX_tmp$se.fit/PC_95CI_PDX_tmp$residual.scale)^2))
 				 MSRs_loocv[i, j]<- std_residuals_new_tmp 
